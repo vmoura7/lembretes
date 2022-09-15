@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+}
+
+.app {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  
+}
+
+.todo-list {
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, .1);
+  border: 2px solid #ffffff30;
+  border-radius: 20px;
+  font-family: "Space Mono", monospace;
+  padding: 1rem;
+  min-height: 400px;
+  min-width: 300px;
+  max-width: 600px;
+
+}
+
+.title {
+  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+  color: #ffffff;
+  font-family: "BioRhyme", serif;
+  font-size: 1.5rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form-input, .form-button {
+  border-radius: 0;
+  font-size: 0.75rem;
+  padding: 0.75rem;
+}
+.form-input {
+  background-color: #fff9f9;
+  border-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  outline: none;
+  width: auto;
+
+}
+.form-button {
+  background: #fff9f9;
+  border: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 0.25rem;
+  text-transform: uppercase;
+}
+.form-button:hover {
+  background: rgba(246, 241, 209, 0.1);
+  color: #fff9f9;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.task {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff9f9;
+  display: flex;
+  font-size: 15px;
+  font-family: 'Bradley Hand', cursive;
+  margin-bottom: 0.5rem;
+  padding: 1rem 0.5rem;
+  flex-direction: column;
+}
+
+
+.delete-button {
+  margin-top: -30px;
+  margin-left: 80px;
+}
+
+
+.delete-button, .check-button {
+  background-color: #fff9f9;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-size: 11px;
+  cursor: pointer;
+  outline: none;
+  width: 70px;
+  height: 30px; 
+}
+
+.delete-button:hover, .check-button:hover {
+  background: rgba(246, 241, 209, 0.1);
+  color: #fff9f9;
+}
+
+.content-data {
+  font-size: 16px;
+}
+
+
+.task.done .check-button {
+  background-color: #46494C;
+  color: #fff9f9;
+}
+
+.check-icon {
+  background-color: transparent;
+  border-radius: 50%;
+  display: block;
+  height: 10px;
+  padding: 1px;
+  width: 10px;
+}
+
+.task.done .check-icon {
+  background-color: #0B2027;
+}
+
+.content {
+  margin: 1rem 0;
+}
+
+.task.done .content {
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=style.css.map */
